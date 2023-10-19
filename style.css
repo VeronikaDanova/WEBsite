@@ -1,0 +1,775 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 160px;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.055);
+    z-index: 2;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.info1 p {
+    font-size: 14px;
+    color: grey;
+    line-height: 1.5;
+}
+
+
+.phone p {
+    font-size: 14px;
+    color: grey;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 120px;
+    }
+    .contact {
+        height: 60px;
+    }
+    .info1 p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .phone p {
+        font-size: 12px;
+    }
+}
+
+em {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.info1 {
+    display: flex;
+}
+
+.phone {
+    display: flex;
+}
+
+.item {
+    display: flex;
+}
+
+.item img {
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.icon {
+    height: 20px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .icon {
+        height: 15px;
+    }
+    .item img {
+        margin-top: 12px;
+        margin-right: 5px;
+    }
+}
+
+.line-container {
+    margin: 0 20px 0 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+@media (max-width: 768px) {
+    .line-container {
+        margin: 0 10px 0 25px;
+    }
+}
+
+.vertical-line {
+    border-left: 2px solid rgb(230, 230, 230);
+    height: 50px;  
+}
+
+.horizontal-line {
+    border-top: 2px solid rgb(230, 230, 230);
+   
+}
+
+.fa-bars {
+    position: absolute;
+    top: 75px;
+    left: 250px;
+    font-size: 30px;
+    color: grey;
+    
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu img {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 25px;
+    font-weight: 500;
+}
+
+
+.btn-menu {
+    background-color: #4762FF;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .menu {
+        height: 60px;
+    }
+    .nav-item {
+       font-size: 16px;
+       padding: 15px;
+    }
+    .menu img {
+        height: 30px; 
+        width: auto;
+    }
+    .btn-menu {
+        font-size: 14px;
+        padding: 6px 15px 6px 15px;
+    }
+    .menu-container {
+        position: absolute;
+        background-color: white;
+        top: 120px;
+        left: 0px;
+        transition: 0.5s;
+        justify-content: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 768px;
+        background-color: #ffffff;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .nav-item {
+        padding: 15px;
+    }
+
+    .menu.active .nav-list {
+        display: flex;
+    }
+    
+   
+}
+
+.section1 {
+    height: calc(712px - 160px);
+}
+
+.main {
+    display: flex;
+    margin-top: 65px;
+}
+
+
+.truck-img {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    z-index: 0;
+}
+
+.main-text {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    color: #333333;
+}
+
+.button-main {
+    background-color: #4762FF;
+    color: white;
+    padding: 17px 40px 17px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-top: 35px;
+    }
+    .section1 {
+        height: calc(350px - 120px)
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .truck-img {
+        height: 180px;
+        width: auto;
+        top: 200px;
+    }
+    .button-main {
+        font-size: 14px;
+        padding: 9px 25px 9px 25px;
+    }
+}
+
+.main-text p,
+.main-text h1,
+.main-text button {
+    margin-top: 15px; 
+ }
+
+.section2 {
+    height: 851px;
+}
+
+ h3 {
+    font-size: 40px;
+ }
+
+ h4 {
+    font-size: 24px;
+ }
+ .about {
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+ }
+
+ .about h3 {
+    margin-bottom: 20px;
+ }
+
+.product-cont {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.product {
+    position: relative;
+    height: 287px;
+    max-width: 505px;
+    background-color: #F4F6FA;
+    border-radius: 9px;
+    flex-basis: calc(100% / 2 - 40px)
+}
+
+.product p {
+    width: 250px;
+    font-size: 16px;
+}
+
+.product img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.product-text {
+    margin: 30px 0  0 30px;
+}
+
+@media (max-width: 768px) {
+    .section2 {
+        height: auto;
+    }
+    .product-cont {
+        gap: 15px;
+    }
+
+    .product {
+        flex-basis: 100%; 
+        height: 250px;
+        max-width: 450px;
+    }
+
+    .product-text {
+        margin: 20px; 
+    }
+
+    .product img {
+        height: 10rem;
+        width: auto;
+    }
+
+    .about h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+    .product p {
+        font-size: 16px;
+    }
+}
+
+.section3 {
+    height: 554px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.brands-container {
+    display: flex;
+    gap: 60px;
+}
+
+.brands {
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-left: 40px;
+    
+}
+
+.two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-left: 40px;
+}
+
+.two img {
+    height: 100%;
+    width: auto;
+}
+
+@media (max-width: 768px){
+    .section3 {
+        height: auto;
+    }
+    .text-content {
+        margin-top: 2rem;
+    }
+    .text-content p{
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+   
+    p{
+        font-size: 16px;
+    }
+    .brands-container {
+        gap: 0px;
+    }
+    .two img {
+       transform: scale(0.5);
+    }
+    .one img {
+        transform: scale(0.5);
+    }
+    .one,
+    .two {
+        margin-bottom: 1rem;
+        padding-left: 0px;
+    }
+}
+
+.section4 {
+    height: 541px;
+    position: relative;
+   background-color: #F4F4F4;
+}
+
+.map-container {
+    display: flex;
+}
+
+.background {
+    width: 50%;
+    height: 541px;
+}
+
+#map {
+    width: 50%;
+    height: 541px;
+    filter: grayscale(100%);
+}
+
+.description {
+    display: flex;
+
+}
+
+.inner-container {
+    width: 36%;
+    position: absolute;
+    top: 60px;
+}
+
+@media (max-width: 768px){
+    .section4 {
+        height: 450px;
+    }
+    #map{
+        height: 450px;
+    }
+}
+
+.section5 {
+    height: 798px;
+}
+
+.section5 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+    
+}
+
+.images-slide {
+    margin-bottom: 1rem;
+    display: flex;
+    width: 1100px;
+    transition: transform 0.3s ease 
+}
+
+.images-slide input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 8px;
+    width: 8px;
+    margin: 3px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsla(232, 100%, 70%, 0.74);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+#img1:checked ~ .img1 {
+    transform: translateX(0); 
+}
+
+#img2:checked ~ .img2 {
+    transform: translateX(-100%);
+}
+
+#img3:checked ~ .img3 {
+    transform: translateX(-200%); 
+}
+
+#img4:checked ~ .img4 {
+    transform: translateX(-300%); 
+}
+
+@media (max-width: 768px){
+    .section5 {
+        height: 500px;
+    }
+    .slider {
+        height: 350px;
+        width: 100%;
+        height: auto;
+    }
+    .images-slide {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+.section6 {
+    height: 687px;
+    background-image: url(images/truck-driver-opening-reservoir-tank-refuel-truck-holding-thumbs-up\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    align-items: center;
+}
+
+.empty {
+    width: 50%;
+}
+.form-container {
+    background-color: white;
+    height: 548px;
+    max-width: 611px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.main6 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-content {
+    margin: 60px;
+}
+
+.form input {
+    border: none;
+    background-color: hsla(236, 100%, 61%, 0.08);
+    border-radius: 8px;
+    width: 100%;
+    padding: 23px 0 23px 0;
+    margin-bottom: 23px;
+    cursor: pointer;
+}
+
+.form input::placeholder {
+    color: #979797;
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.form input[type="submit"] {
+    background-color: #4762FF;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (max-width: 768px){
+    .section6 {
+        height: 400px;
+    }
+
+    .form-container{
+        width: 80%;
+        height: auto;
+    }
+    .form input {
+        padding: 13px 0 13px 0;
+        margin-bottom: 15px;
+    }
+
+    .form-content {
+        margin: 20px;
+    }
+    .form input[type="submit"]{
+        font-size: 16px;
+    }
+}
+
+footer {
+    height: 391px;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.instagram {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.social p,
+.instagram p {
+    font-size: 16px;
+    color: white;
+    margin: 0 0 13px 0;
+}
+
+.social img,
+.instagram img {
+    height: 20px;
+    width: 20px;
+    padding-right: 9px;
+}
+
+.footer-contact ul li {
+    font-size: 16px;
+    list-style-type: none;
+    padding-bottom: 8px;
+}
+
+.footer-contact ul{
+    padding-left: 0;
+    margin-bottom: 7px;
+}
+
+.horizontal-line-footer {
+    border-top: 1px solid #474747 ;
+}
+
+.copyright p{
+    color: #D9DBE1;
+    font-size: 12px;
+    color: white;
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 768px){
+    footer {
+        height: auto;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    .footer-contact ul li {
+        font-size: 14px;
+        list-style-type: none;
+        padding-bottom: 4px;
+    }
+    .social p,
+    .instagram p {
+    font-size: 14px;
+    }
+    .footer-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+    }
+    .footer-item {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+   
+}
